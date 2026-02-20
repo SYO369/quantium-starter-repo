@@ -10,7 +10,10 @@ df['Date'] = pd.to_datetime(df['Date'])
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.H1("Pink Morsel Visualizer"),
+    html.H1(
+        "Pink Morsel Visualizer",
+        id='app-header'
+        ),
 
     html.Div([
         html.Label("Select Region:"),
